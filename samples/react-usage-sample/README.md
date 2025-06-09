@@ -1,6 +1,6 @@
-# React Rich Editor Sample
+# React Rich Input Sample
 
-A minimal React demo showcasing `react-rich-editor`.
+A minimal React demo showcasing `react-rich-input`.
 
 ## Setup
 
@@ -13,5 +13,5 @@ Then open [http://localhost:8080](http://localhost:8080).
 
 ## Features
 
-- Displays editor with basic toolbar.
+- Displays input with basic toolbar.
 - Shows live HTML output on change.

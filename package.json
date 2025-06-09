@@ -1,10 +1,10 @@
 {
-  "name": "rich-editor",
-  "description": "A monorepo featuring React‑ and Next‑based rich text editor packages, alongside demos.",
+  "name": "rich-inputs",
+  "description": "A monorepo featuring React‑ and Next‑based rich text input packages, alongside demos.",
   "packageManager": "bun@1.2.15",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amiry-jd/rich-editor"
+    "url": "https://github.com/amiry-jd/rich-inputs"
   },
   "publishConfig": {
     "access": "public",

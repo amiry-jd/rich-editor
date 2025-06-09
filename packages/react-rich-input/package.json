@@ -1,9 +1,10 @@
 {
-  "name": "next-rich-editor",
+  "name": "react-rich-input",
+  "description": "A lightweight, customizable rich‑text input React component with extensible toolbar.",
   "version": "0.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amiry-jd/rich-editor"
+    "url": "https://github.com/amiry-jd/rich-inputs"
   },
   "publishConfig": {
     "access": "public",
@@ -11,7 +12,6 @@
   },
   "author": "Javad Amiry",
   "license": "MIT",
-  "module": "src/index.ts",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,13 +25,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/**/*.ts src/**/*.tsx --dts --format esm,cjs --external react,react-dom"
+    "build": "tsup src/**/*.ts src/**/*.tsx --dts --format esm,cjs --external react,react-dom",
+    "dev": "bun dev"
   },
   "dependencies": {
-    "react-rich-editor": "workspace:*",
-    "next": "^14.0.0"
+    "quill": "^2.0.3"
   },
   "devDependencies": {
+    "@types/quill": "^2.0.14",
     "tsup": "^7.2.0",
     "typescript": "^5.0.0"
   },

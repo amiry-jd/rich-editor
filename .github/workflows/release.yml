@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/react-rich-editor
+        working-directory: ./packages/react-rich-input
 
     steps:
       - name: Checkout code
@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/next-rich-editor
+        working-directory: ./packages/next-rich-input
 
     steps:
       - name: Checkout code

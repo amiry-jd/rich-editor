@@ -1,28 +1,28 @@
-# react-rich-editor
+# react-rich-input
 
-A lightweight React rich‑text editor component with toolbar customization.
+A lightweight React rich‑text input component with toolbar customization.
 
 ## Installation
 
 ```bash
-npm install react-rich-editor
+npm install react-rich-input
 ```
 
 or using yarn
 
 ```bash
-yarn add react-rich-editor
+yarn add react-rich-input
 ```
 
 ## Usage
 
 ```tsx
 import React, { useState } from "react";
-import { RichEditor } from "react-rich-editor";
+import { RichInput } from "react-rich-input";
 
 export default function App() {
   const [content, setContent] = useState("<p>Hello world</p>");
-  return <RichEditor value={content} onChange={setContent} toolbar={["bold", "italic", "underline", "link"]} />;
+  return <RichInput value={content} onChange={setContent} toolbar={["bold", "italic", "underline", "link"]} />;
 }
 ```
 

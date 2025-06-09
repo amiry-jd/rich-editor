@@ -1,6 +1,5 @@
 {
-  "name": "react-rich-editor",
-  "description": "A lightweight, customizable rich‑text editor React component with extensible toolbar.",
+  "name": "next-rich-editor",
   "version": "0.0.3",
   "repository": {
     "type": "git",
@@ -12,6 +11,7 @@
   },
   "author": "Javad Amiry",
   "license": "MIT",
+  "module": "src/index.ts",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,14 +25,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/**/*.ts src/**/*.tsx --dts --format esm,cjs --external react,react-dom",
-    "dev": "bun dev"
+    "build": "tsup src/**/*.ts src/**/*.tsx --dts --format esm,cjs --external react,react-dom"
   },
   "dependencies": {
-    "quill": "^2.0.3"
+    "react-rich-input": "workspace:*",
+    "next": "^14.0.0"
   },
   "devDependencies": {
-    "@types/quill": "^2.0.14",
     "tsup": "^7.2.0",
     "typescript": "^5.0.0"
   },

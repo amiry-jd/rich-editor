@@ -1,20 +1,11 @@
 import Quill from "quill";
 import { Delta } from "quill/core";
-import {
-  forwardRef,
-  type RefObject,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-} from "react";
 import "quill/dist/quill.snow.css";
+import { forwardRef, type RefObject, useEffect, useLayoutEffect, useRef } from "react";
 import type { RichInputProps } from "./types";
 
 const RichInput = forwardRef<Quill | null, RichInputProps>(
-  (
-    { readOnly = false, value = "", onChange, className, style, options },
-    ref
-  ) => {
+  ({ readOnly = false, value = "", onChange, className, style, options }, ref) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const valueRef = useRef<string | undefined>(value);
     const onChangeRef = useRef<typeof onChange>(onChange);
@@ -27,10 +18,10 @@ const RichInput = forwardRef<Quill | null, RichInputProps>(
       const container = containerRef.current;
       if (!container) return;
 
-      const editorContainer = container.ownerDocument.createElement("div");
-      container.appendChild(editorContainer);
+      const inputContainer = container.ownerDocument.createElement("div");
+      container.appendChild(inputContainer);
 
-      const quill = new Quill(editorContainer, {
+      const quill = new Quill(inputContainer, {
         theme: "snow",
         readOnly,
         ...options,

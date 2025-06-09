@@ -1,4 +1,4 @@
-import { RichInput } from "react-rich-editor";
+import { RichInput } from "react-rich-input";
 import "./index.css";
 
 import { useRef, useState } from "react";
@@ -30,8 +30,7 @@ export function App() {
             backgroundColor: "#EFEFFA",
             color: "black",
           }}
-          dangerouslySetInnerHTML={{ __html: htmlValue }}
-        ></div>
+          dangerouslySetInnerHTML={{ __html: htmlValue }}></div>
       </div>
     </div>
   );

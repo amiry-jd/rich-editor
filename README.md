@@ -1,16 +1,16 @@
-# Rich Editor
+# Rich Input
 
-A monorepo with two rich‑text editor packages and corresponding samples:
+A monorepo with two rich‑text input packages and corresponding samples:
 
-- `react-rich-editor` – A lightweight, customizable rich‑text editor for React.
-- `next-rich-editor` – A Next.js‑friendly version with SSR support.
+- `react-rich-input` – A lightweight, customizable rich‑text input for React.
+- `next-rich-input` – A Next.js‑friendly version with SSR support.
 - Samples in `samples/` demonstrate usage in React and Next projects.
 
 ## 🧰 Getting Started
 
 ```bash
-git clone https://github.com/amiry-jd/rich-editor.git
-cd rich-editor
+git clone https://github.com/amiry-jd/rich-inputs.git
+cd rich-inputs
 npm install
 npm run build
 # To view samples:
@@ -20,18 +20,18 @@ cd samples/next-usage-sample && npm run dev
 
 ## 📦 Packages
 
-### `react-rich-editor`
+### `react-rich-input`
 
-A reusable WYSIWYG editor React component with customizable toolbar.
+A reusable WYSIWYG input React component with customizable toolbar.
 
-### `next-rich-editor`
+### `next-rich-input`
 
-Built atop the React editor, adds Next.js SSR compatibility and lazy loading.
+Built atop the React input, adds Next.js SSR compatibility and lazy loading.
 
 ## 🧪 Samples
 
 - React sample: Webpack demo with live rich‑text editing.
-- Next sample: Next.js page integrating the editor in SSR and CSR.
+- Next sample: Next.js page integrating the input in SSR and CSR.
 
 ## 🤝 Contributing
 

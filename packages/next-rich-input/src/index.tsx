@@ -1,15 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import {
-  Children,
-  isValidElement,
-  useEffect,
-  useState,
-  type ReactElement,
-  type ReactNode,
-} from "react";
-import type { RichInputProps as BaseProps } from "react-rich-editor";
+import { Children, isValidElement, useEffect, useState, type ReactElement, type ReactNode } from "react";
+import type { RichInputProps as BaseProps } from "react-rich-input";
 
 export interface NextRichInputProps extends BaseProps {
   children?: ReactNode;
@@ -24,16 +17,14 @@ LoadingTemplate.displayName = "RichInput.LoadingTemplate";
 // Helper to extract loading template
 function extractLoading(children: ReactNode): ReactNode | undefined {
   return Children.toArray(children).find(
-    (child) =>
-      isValidElement(child) &&
-      (child.type as any).displayName === "RichInput.LoadingTemplate"
+    (child) => isValidElement(child) && (child.type as any).displayName === "RichInput.LoadingTemplate"
   ) as ReactElement | undefined;
 }
 
-const Editor = dynamic(
-  () => import("react-rich-editor").then((mod) => mod.RichInput),
-  { ssr: false, loading: () => <div>Loading editor...</div> }
-);
+const Input = dynamic(() => import("react-rich-input").then((mod) => mod.RichInput), {
+  ssr: false,
+  loading: () => <div>Loading input...</div>,
+});
 
 export function RichInput({ children, ...props }: NextRichInputProps) {
   const [isMounted, setIsMounted] = useState(false);
@@ -44,12 +35,10 @@ export function RichInput({ children, ...props }: NextRichInputProps) {
     };
   }, []);
 
-  const loadingSlot = extractLoading(children) as
-    | ReactElement<{ children?: ReactNode }>
-    | undefined;
+  const loadingSlot = extractLoading(children) as ReactElement<{ children?: ReactNode }> | undefined;
 
-  // const Editor = dynamic(
-  //   () => import("react-rich-editor").then((m) => m.RichInput),
+  // const Input = dynamic(
+  //   () => import("react-rich-input").then((m) => m.RichInput),
   //   {
   //     ssr: false,
   //     loading: () => {
@@ -59,7 +48,7 @@ export function RichInput({ children, ...props }: NextRichInputProps) {
   //       }
   //       return (
   //         <>
-  //           <div>Loading editor...</div>
+  //           <div>Loading input...</div>
   //         </>
   //       );
   //     },
@@ -67,7 +56,7 @@ export function RichInput({ children, ...props }: NextRichInputProps) {
   // );
 
   if (isMounted) {
-    return <Editor {...props} />;
+    return <Input {...props} />;
   } else {
     return <>{loadingSlot?.props.children}</>;
   }

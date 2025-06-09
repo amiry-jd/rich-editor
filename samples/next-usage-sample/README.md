@@ -1,6 +1,6 @@
-# Next.js Rich Editor Sample
+# Next.js Rich Input Sample
 
-Demo of `next-rich-editor` in a Next.js app.
+Demo of `next-rich-input` in a Next.js app.
 
 ## Setup
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to interact with the editor.
+Visit [http://localhost:3000](http://localhost:3000) to interact with the input.
 
 ## Notes
 
