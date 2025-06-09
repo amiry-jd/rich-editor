@@ -1,6 +1,16 @@
 {
-  "name": "rich-editor-monorepo",
+  "name": "rich-editor",
   "packageManager": "bun@1.2.15",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amiry-jd/rich-editor"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "Javad Amiry",
+  "license": "MIT",
   "module": "index.ts",
   "type": "module",
   "private": true,
