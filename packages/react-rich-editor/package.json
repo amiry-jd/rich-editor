@@ -1,7 +1,6 @@
 {
   "name": "react-rich-editor",
   "description": "A lightweight, customizable rich‑text editor React component with extensible toolbar.",
-  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/amiry-jd/rich-editor"

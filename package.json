@@ -1,6 +1,7 @@
 {
   "name": "rich-editor",
   "description": "A monorepo featuring React‑ and Next‑based rich text editor packages, alongside demos.",
+  "version": "0.0.2",
   "packageManager": "bun@1.2.15",
   "repository": {
     "type": "git",
