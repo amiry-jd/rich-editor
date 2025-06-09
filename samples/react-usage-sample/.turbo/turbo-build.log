@@ -1,9 +1,0 @@
-
-[0m[2m[35m$[0m [2m[1mbun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='"production"' --env='BUN_PUBLIC_*'[0m
-[32mBundled 2 modules in 6ms[0m
-
-  [34mindex-eggwhq3g.js[0m      89 bytes   [2m(entry point)[0m
-  [2mindex-eggwhq3g.js.map[0m  144 bytes  [2m(source map)[0m
-  [34mindex.html[0m             470 bytes  [2m(entry point)[0m
-  [35mlogo-kygw735p.svg[0m      3.94 KB    [2m(asset)[0m
-
