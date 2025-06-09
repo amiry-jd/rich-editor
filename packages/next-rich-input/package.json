@@ -1,9 +1,9 @@
 {
-  "name": "next-rich-editor",
-  "version": "0.0.4",
+  "name": "next-rich-input",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amiry-jd/rich-editor"
+    "url": "https://github.com/amiry-jd/rich-inputs"
   },
   "publishConfig": {
     "access": "public",
