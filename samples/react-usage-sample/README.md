@@ -1,21 +1,17 @@
-# bun-react-template
+# React Rich Editor Sample
 
-To install dependencies:
+A minimal React demo showcasing `react-rich-editor`.
 
-```bash
-bun install
-```
-
-To start a development server:
+## Setup
 
 ```bash
-bun dev
+npm install
+npm start
 ```
 
-To run for production:
+Then open [http://localhost:8080](http://localhost:8080).
 
-```bash
-bun start
-```
+## Features
 
-This project was created using `bun init` in bun v1.2.15. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- Displays editor with basic toolbar.
+- Shows live HTML output on change.

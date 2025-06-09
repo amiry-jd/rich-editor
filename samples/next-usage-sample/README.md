@@ -1,0 +1,17 @@
+# Next.js Rich Editor Sample
+
+Demo of `next-rich-editor` in a Next.js app.
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to interact with the editor.
+
+## Notes
+
+- Uses dynamic import with SSR disabled.
+- Handles rich-text state via React hooks.
