@@ -1,7 +1,7 @@
 "use client";
 
-import { RichInput } from "next-rich-editor";
 import { useRef, useState } from "react";
+import { RichInput } from "next-rich-input";
 
 export default function Home() {
   const [htmlValue, setHtmlValue] = useState("<h1>Hello World!</h1>");

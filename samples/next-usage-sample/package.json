@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "14.0.0",
-    "react-rich-editor": "workspace:*"
+    "next-rich-input": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5",
