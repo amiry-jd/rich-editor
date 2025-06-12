@@ -54,7 +54,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
 
       - name: Change react-rich-input dependency to read from npmjs
-        uses: |
+        run: |
           jq --arg ver "$(jq -r '.version' ../react-rich-input/package.json)" \                                                                    ─╯
           '.dependencies["react-rich-input"] = $ver' \
           package.json > tmp.json && \
