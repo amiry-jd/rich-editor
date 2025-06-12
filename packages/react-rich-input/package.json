@@ -1,7 +1,7 @@
 {
   "name": "react-rich-input",
   "description": "A lightweight, customizable rich‑text input React component with extensible toolbar.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/amiry-jd/rich-inputs"
